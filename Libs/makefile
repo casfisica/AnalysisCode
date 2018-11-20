@@ -1,0 +1,6 @@
+CPPFLAGS=-I. -Wall      #-I flag is to search the includes in some directories
+                        #-Wall flag is for the compiler show all warnings 
+
+
+main_Error:	Error_Propagation.cpp Error_Propagation.hpp main_Error_Propagation.cpp
+		$(CXX) $(CPPFLAGS) $<  $@.cpp -o $@
